@@ -28,29 +28,51 @@
     width: @column-width-s;
     padding: 0 @column-padding-s;
 
+    &_s-full {
+        width: 100%;
+    }
+
+    &_s-half {
+        width: 50%;
+    }
+
+    each(range(2), {
+        &_s-@{value} {
+            width: @column-width-s * @value;
+        }
+    })
+
     @media @screen-gt-s {
         padding: 0 @column-padding-m;
-    }
-}
 
-each(range(2), {
-    .column_s-@{value} {
-        width: @column-width-s * @value;
-    }
-})
-
-@media @screen-gt-s {
-    each(range(6), {
-        .column_m-@{value} {
-            width: @column-width-m * @value;
+        &_m-full {
+            width: 100%;
         }
-    })
-}
 
-@media @screen-gt-m {
-    each(range(12), {
-        .column_l-@{value} {
-            width: @column-width-l * @value;
+        &_m-half {
+            width: 50%;
         }
-    })
+
+        each(range(6), {
+            &_m-@{value} {
+                width: @column-width-m * @value;
+            }
+        })
+    }
+
+    @media @screen-gt-m {
+        &_l-full {
+            width: 100%;
+        }
+
+        &_l-half {
+            width: 50%;
+        }
+
+        each(range(12), {
+            &_l-@{value} {
+                width: @column-width-l * @value;
+            }
+        })
+    }
 }
