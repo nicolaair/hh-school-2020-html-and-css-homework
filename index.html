@@ -45,12 +45,65 @@
                     </div>
                     <div class="header__button">
                         <button class="header-button-icon header-button-icon_menu">
-                        Menu
+                            Menu
                         </button>
                     </div>
                 </div>
             </div>
         </header>
+
+        <section class="section-slider">
+            <div class="column-wrapper">
+                <div class="slider">
+                    <div class="slider__slide slider__slide_active">
+                        <div class="slider__column slider__column_slide">
+                            <img class="slider__image" src="images/slide-1.jpg" alt="Мужская и женская одежда с символикой HeadHunter">
+                        </div>
+                        <div class="slider__column slider__column_content">
+                            <div class="slider__caption">Мужская и женская одежда с символикой HeadHunter</div>
+                            <button class="button">Перейти в каталог</button>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__column slider__column_image">
+                            <img class="slider__image" src="images/slide-2.jpg" alt="Офисные принадлежности с символикой HeadHunter">
+                        </div>
+                        <div class="slider__column slider__column_content">
+                            <div class="slider__caption">Офисные принадлежности с символикой HeadHunter</div>
+                            <button class="button">Перейти в каталог</button>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__column slider__column_slide">
+                            <img class="slider__image" src="images/slide-1.jpg" alt="Мужская и женская одежда с символикой HeadHunter">
+                        </div>
+                        <div class="slider__column slider__column_content">
+                            <div class="slider__caption">Мужская и женская одежда с символикой HeadHunter</div>
+                            <button class="button">Перейти в каталог</button>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__column slider__column_slide">
+                            <img class="slider__image" src="images/slide-2.jpg" alt="Офисные принадлежности с символикой HeadHunter">
+                        </div>
+                        <div class="slider__column slider__column_content">
+                            <div class="slider__caption">Офисные принадлежности с символикой HeadHunter</div>
+                            <button class="button">Перейти в каталог</button>
+                        </div>
+                    </div>
+                    <!-- Я бы хотел сразу обсудить с дизайнером решение расположить пагинацию для mobile между image и caption. -->
+                    <!-- Пагинация инородный элемент для самого слайда, не хотелось бы применять position absolute и уж темболее -->
+                    <!-- затаскивать пагинацию в каждый слайд, пока немного отличается от макета, жду комментария на этот счет. -->
+                    <!-- В представлениях для остальных типов устройств все в порядке. -->
+                    <div class="slider__pagination">
+                        <button class="slider__pagination-item slider__pagination-item_active">
+                        <button class="slider__pagination-item"></button>
+                        <button class="slider__pagination-item"></button>
+                        <button class="slider__pagination-item"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="section-content">
             <div class="column-wrapper">
@@ -117,6 +170,66 @@
                 </div>
             </div>
         </section>
+
+        <section class="section-services">
+            <div class="column-wrapper">
+                <div class="column-row">
+                    <div class="column column_s-full column_m-2 column_l-4">
+                        <div class="service">
+                            <i class="service__icon service__icon_delivery"></i>
+                            <!-- Были перепутаны иконки delivery <-> support -->
+                            <div class="service__caption">Быстрая доставка по&nbsp;всей&nbsp;России</div>
+                        </div>
+                    </div>
+                    <div class="column column_s-full column_m-2 column_l-4">
+                        <div class="service">
+                            <i class="service__icon service__icon_return"></i>
+                            <div class="service__caption">100% гарантия возврата и&nbsp;подлинность товара</div>
+                        </div>
+                    </div>
+                    <div class="column column_s-full column_m-2 column_l-4">
+                        <div class="service">
+                            <i class="service__icon service__icon_support"></i>
+                            <!-- Были перепутаны иконки delivery <-> support -->
+                            <div class="service__caption">Круглосуточная служба&nbsp;поддержки</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="column-wrapper">
+                <div class="column-row">
+                    <div class="column column_s-full column_m-half column_l-4">
+                        <div class="footer__social-networks">
+                            <a href="#"><i class="footer__social-icon footer__social-icon_facebook"></i></a>
+                            <a href="#"><i class="footer__social-icon footer__social-icon_twitter"></i></a>
+                            <a href="#"><i class="footer__social-icon footer__social-icon_vk"></i></a>
+                            <a href="#"><i class="footer__social-icon footer__social-icon_instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="column column_s-full column_m-half column_l-4">
+                        <div class="footer__available-in">
+                            <a href="#"><i class="footer__available-button footer__available-button_app-store"></i></a>
+                            <a href="#"><i class="footer__available-button footer__available-button_google-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="column column_s-full column_m-half column_l-4">
+                        <div class="footer__logo">
+                            <a href="/">
+                                <img class="logo" src="css/blocks/footer/logo-grayscale.svg" alt="hh logo grayscale">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <!-- Обновлен год -->
+                    <div class="footer__copyright">&copy; 2020 Группа компаний HeadHunter</div>
+                    <div class="footer__summary">Сегодня на&nbsp;сайте 684&nbsp;978&nbsp;вакансий, 34&nbsp;789&nbsp;747&nbsp;резюме, 858&nbsp;923&nbsp;компании и&nbsp;за&nbsp;неделю 1&nbsp;211&nbsp;363&nbsp;приглашения</span></div>
+                </div>
+            </div>
+        </footer>
 
         <script src="js/grid.js"></script>
     </body>

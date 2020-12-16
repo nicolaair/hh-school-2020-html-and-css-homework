@@ -1,0 +1,35 @@
+.service {
+    display: flex;
+    align-items: center;
+
+    @media @screen-only-s {
+        margin: 15px 20px 15px 0;
+    }
+
+    @media @screen-gt-s {
+        margin: 15px 0;
+    }
+
+    @media @screen-gt-m {
+        padding: 0 20px 0 0;
+    }
+    
+    &__icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        flex: 0 0 auto;
+
+        &_delivery {
+            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M38.75 28.75V25.625L33.75 21.25H28.75' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15 36.25C16.3807 36.25 17.5 35.1307 17.5 33.75C17.5 32.3693 16.3807 31.25 15 31.25C13.6193 31.25 12.5 32.3693 12.5 33.75C12.5 35.1307 13.6193 36.25 15 36.25Z' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M33.75 36.25C35.1307 36.25 36.25 35.1307 36.25 33.75C36.25 32.3693 35.1307 31.25 33.75 31.25C32.3693 31.25 31.25 32.3693 31.25 33.75C31.25 35.1307 32.3693 36.25 33.75 36.25Z' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.5 33.75H10V28.75M10 28.75H38.75V33.75H36.25M10 28.75V18.625M15.3125 15H28.75V28.75M1.25 23.75H5M3.75 28.75H5' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.5 33.75H10V28.75M10 28.75H38.75V33.75H36.25M10 28.75V18.625M15.3125 15H28.75V28.75M1.25 23.75H5M3.75 28.75H5M17.8125 33.75H31.25' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.75 18.75C12.8921 18.75 16.25 15.3921 16.25 11.25C16.25 7.10786 12.8921 3.75 8.75 3.75C4.60786 3.75 1.25 7.10786 1.25 11.25C1.25 15.3921 4.60786 18.75 8.75 18.75Z' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.75 7.5V12.5H12.5' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+
+        &_return {
+            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 9.375L23.75 3.125L17.5 9.375M23.75 20.625V3.125V20.625Z' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2.5 4.375H6.25L11.25 26.875H37.5' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15 36.875C16.3807 36.875 17.5 35.7557 17.5 34.375C17.5 32.9943 16.3807 31.875 15 31.875C13.6193 31.875 12.5 32.9943 12.5 34.375C12.5 35.7557 13.6193 36.875 15 36.875Z' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M31.25 36.875C32.6307 36.875 33.75 35.7557 33.75 34.375C33.75 32.9943 32.6307 31.875 31.25 31.875C29.8693 31.875 28.75 32.9943 28.75 34.375C28.75 35.7557 29.8693 36.875 31.25 36.875Z' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+
+        &_support {
+            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25 36.25C25 36.25 32.5 36.25 32.5 27.5H35.25C35.8467 27.5 36.419 27.2629 36.841 26.841C37.2629 26.419 37.5 25.8467 37.5 25.25V18.5C37.5 17.9033 37.2629 17.331 36.841 16.909C36.419 16.4871 35.8467 16.25 35.25 16.25H32.5V13.75C32.5 6.84687 27.5281 1.25 20.625 1.25H19.375C12.4706 1.25 7.5 6.84687 7.5 13.75V16.25H4.75C4.15326 16.25 3.58097 16.4871 3.15901 16.909C2.73705 17.331 2.5 17.9033 2.5 18.5V25.25C2.5 25.8467 2.73705 26.419 3.15901 26.841C3.58097 27.2629 4.15326 27.5 4.75 27.5H6.25' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25 36.25C25 35.587 24.7366 34.9511 24.2678 34.4822C23.7989 34.0134 23.163 33.75 22.5 33.75H20C19.337 33.75 18.7011 34.0134 18.2322 34.4822C17.7634 34.9511 17.5 35.587 17.5 36.25C17.5 36.913 17.7634 37.5489 18.2322 38.0178C18.7011 38.4866 19.337 38.75 20 38.75H22.5C23.163 38.75 23.7989 38.4866 24.2678 38.0178C24.7366 37.5489 25 36.913 25 36.25Z' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25 15L21.25 23.75H30M27.5 20V27.5M11.25 15.9687C11.9544 15.3411 12.8695 15.0021 13.8127 15.0192C14.756 15.0363 15.6582 15.4084 16.3393 16.0611C17.0205 16.7139 17.4305 17.5994 17.4878 18.5411C17.545 19.4828 17.2452 20.4114 16.6481 21.1419L11.25 27.5H18.75' stroke='%23666666' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+    }
+}
